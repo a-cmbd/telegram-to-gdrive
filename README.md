@@ -2,11 +2,13 @@
 An interactive Google Colab tool to download Telegram files directly to Google Drive with live speed, ETA, and auto-organization.
 # 📥 Telegram to Google Drive — Interactive Downloader
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([YOUR_COLAB_LINK_HERE](https://colab.research.google.com/drive/1ZL4un43heVoqIWDYnK542d6epVJ8DS0H))
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ZL4un43heVoqIWDYnK542d6epVJ8DS0H)
 
 An automated, interactive tool built for Google Colab that lets you download files, videos, and albums from Telegram (public, private, or forum topics) directly into your Google Drive.
 
 > 🤖 **Credits:** The code, UI, and architecture for this project were written and engineered in collaboration with **DeepSeek AI**.
+
+---
 
 ## ✨ Features
 - **📂 Auto-Organized:** Automatically saves files into subfolders named `Sender Name - YYYY-MM-DD` to keep your Drive clean.
@@ -55,4 +57,4 @@ An automated, interactive tool built for Google Colab that lets you download fil
 - [Google Colab API](https://research.google.com/colaboratory/) — For mounting Google Drive.
 
 ## 📝 License
-This project is licensed under the MIT License - feel free to use, modify, and distribute it.
+This project is licensed under the MIT License - feel free to use, modify, and distribute it. See the `LICENSE` file for details.
