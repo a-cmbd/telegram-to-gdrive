@@ -2,7 +2,7 @@
 An interactive Google Colab tool to download Telegram files directly to Google Drive with live speed, ETA, and auto-organization.
 # 📥 Telegram to Google Drive — Interactive Downloader
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ZL4un43heVoqIWDYnK542d6epVJ8DS0H)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kSLG1x49hkUmlMDtOzBTJbUl_lCD4i4T?usp=sharing)
 
 An automated, interactive tool built for Google Colab that lets you download files, videos, and albums from Telegram (public, private, or forum topics) directly into your Google Drive.
 
@@ -16,8 +16,8 @@ An automated, interactive tool built for Google Colab that lets you download fil
 - **✅ Interactive Selection:** Fetch a Telegram album, preview the files, uncheck the ones you don't want, and upload the rest.
 - **🛡️ Auto-Resume:** If your Colab session disconnects, it compares file sizes and skips files already in your Drive.
 - **📊 Live Dashboard:** A real-time dashboard (updates every 3 seconds) showing your total files, storage used, and recent download history.
-- **🔐 Secure Session Reuse:** Saves your Telegram session safely inside your own Google Drive, so you only log in once.
-- **🗑️ Easy Logout:** A built-in step to safely terminate your Telegram session and remove your saved credentials from Google Drive whenever you want.
+- **🔐 Secure Login:** Fully supports Telegram's Two-Step Verification (2FA). Your session is safely saved inside your own Google Drive, so you only log in once.
+- **🗑️ Easy Logout:** A built-in step to safely terminate your Telegram session and completely wipe your saved credentials (Session + API Keys) from your Google Drive.
 
 ---
 
@@ -38,10 +38,10 @@ An automated, interactive tool built for Google Colab that lets you download fil
 1. Click the **Open in Colab** badge at the top of this page.
 2. Run **⚙️ Step 0 (Setup)** to install dependencies and mount your Drive.
 3. Run **🔧 Step 1 (Backend)** to initialize the background logic.
-4. Run **🔑 Step 2 (Connect)**. Paste your API ID, API Hash, and phone number. Enter the login code sent to your Telegram app.
+4. Run **🔑 Step 2 (Connect)**. Paste your API ID, API Hash, and phone number. Enter the login code sent to your Telegram app. **If you have Two-Step Verification (2FA) enabled, enter your cloud password when prompted.**
 5. Run **📤 Step 3 (Upload)**. Paste a Telegram link, click **Fetch & Preview**, select your files, and click **Upload**!
 6. Run **📊 Step 4 (Dashboard)** to see a live view of your files.
-7. **Finished?** Run **🗑 Step 5 (Logout & Credentials)** at any time to securely log out, terminate your session on Telegram's servers, and delete the saved credentials from your Drive.
+7. **Finished?** Run **🗑 Step 5 (Logout & Credentials)** at any time to securely log out, terminate your session on Telegram's servers, and delete **all** saved credentials from your Drive. *(Note: You will need to re-enter your API ID and Hash next time you run the notebook).*
 
 ---
 
@@ -49,7 +49,7 @@ An automated, interactive tool built for Google Colab that lets you download fil
 * **Google Drive Quota:** The free tier of Google Drive is limited to **15 GB**. If you hit this limit, file transfers will fail.
 * **Google Colab ToS:** Colab is designed for interactive coding, not as a 24/7 bulk file-transfer server. Avoid downloading massive amounts of data in a single run to prevent your session from being flagged.
 * **Private Groups:** To download from a private group or channel, your Telegram account **must** already be a member of that group.
-* **Security:** Your Telegram session is securely saved to `TelegramToGDrive Credentials` in your Drive. If you ever want to revoke access, use the built-in **Step 5: Logout** cell in the notebook, and delete the folder from your Drive.
+* **Security:** Your Telegram session and API credentials are securely saved to `TelegramToGDrive Credentials` in your Drive. If you ever want to revoke access, use the built-in **Step 5: Logout** cell in the notebook to wipe them completely.
 * **Copyright:** This tool is intended for personal backups. Do not use it to mass-mirror copyrighted material. Use responsibly.
 
 ---
